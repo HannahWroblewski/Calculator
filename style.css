@@ -1,0 +1,97 @@
+ .calculator{
+  border: 1px solid blue;
+  display: grid;
+  grid-template-rows: 100px auto;
+}
+
+
+.display {
+    box-sizing: border-box;
+    border-color: hotpink;
+    padding: 5px;
+    grid-row: 1;
+    border-radius: 8px;
+    height: 180px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 30px 40px 50px;
+    background-color: wheat;
+  }
+
+  .controls{
+    border: 1px solid red;
+    display: grid;
+    height: 290px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .operations {
+    font-size: 3rem;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column: 4 / 5;
+    grid-row: 1 / 6;
+  }
+
+  .memory{
+    grid-template-columns: repeat (2fr, 3fr);
+    display: grid;
+    grid-column: 1 / 4;
+  }
+
+  .memory button {
+    background-color: turquoise;
+  }
+
+  .operations button{
+    background-color: violet;
+  }
+
+  .digits {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+  }
+
+  .digits :last-of-type{
+    grid-column : 2 / 4;
+  }
+
+  .digits button {
+    background-color: tomato;
+  }
+
+  .memory button {
+    background-color: blueviolet;
+  }
+
+  .held-value {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .held-label {
+    grid-column: 1 / 3;
+  }
+ 
+  html {
+    font-size: 18px;
+    font-family: 'OCR A Std', monospace;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  
+  #app h1 {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
