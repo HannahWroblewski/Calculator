@@ -1,5 +1,10 @@
- .calculator{
-  border: 1px solid blue;
+* {
+  background-color: #340920;
+  color: white;
+}
+
+.calculator{
+  /* border: 1px solid blue; */
   display: grid;
   grid-template-rows: 100px auto;
 }
@@ -14,11 +19,11 @@
     height: 180px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 30px 40px 50px;
-    background-color: wheat;
+    background-color: #A8B4A5;
   }
 
   .controls{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     height: 290px;
     grid-template-columns: repeat(4, 1fr);
@@ -40,11 +45,11 @@
   }
 
   .memory button {
-    background-color: turquoise;
+    background-color: #725D68;
   }
 
   .operations button{
-    background-color: violet;
+    background-color: #9D6A89;
   }
 
   .digits {
@@ -60,11 +65,11 @@
   }
 
   .digits button {
-    background-color: tomato;
+    background-color: #048A81;
   }
 
   .memory button {
-    background-color: blueviolet;
+    background-color: #725D68;
   }
 
   .held-value {
@@ -73,6 +78,7 @@
   }
 
   .held-label {
+    background-color: #A8B4A5;
     grid-column: 1 / 3;
   }
  
